@@ -1,0 +1,31 @@
+/*File di stile generico per il sito.*/
+
+
+body 
+	{ /*Si setta il background.*/
+	 background-image: url(materials/img/background.jpg); /*Uri del background.*/
+     background-position: fixed; /*Posizionato al centro.*/
+     background-size:  cover; /*Dimensione totale della pagina.*/
+     background-repeat: no-repeat; /*Sfondo unico e non ripetuto.*/
+     min-height: 100%; /*Questo specifica che il corpo occupa almeno il 100% della pagina.*/
+     }
+
+/*Stile per lo striping della tabella del catalogo.*/
+.catalogo tbody tr:nth-child(even) 
+	{background-color: #39CCCC;}
+.catalogo tbody tr:nth-child(odd)
+     {background-color: #7FDBFF;}	
+
+/*Stile per i bottoni.*/
+.bottone /*Prima della transizione.*/
+	{
+	 background-color: white; 
+      color: black; 
+      border: 2px solid #008CBA; 
+	 transition-duration: 0.4s;
+     }
+.bottone:hover /*Dopo la transizione.*/
+	{
+	 background-color: #008CBA;
+      color: white;
+	}
